@@ -64,7 +64,7 @@ def progress(current, total, message, type):
 @bot.on_message(filters.command(["start"]))
 def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
 	bot.send_message(message.chat.id, f"**__👋 Hi** **{message.from_user.mention}**, **I am Save Restricted Bot, I can send you restricted content by it's post link__**\n\n{USAGE}",
-	reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("🌐 Update Channel", url="https://t.me/VJ_Botz")]]), reply_to_message_id=message.id)
+	reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("🌐 Update Channel", url="https://t.me/INFINITY_BACKUP")]]), reply_to_message_id=message.id)
 
 
 @bot.on_message(filters.text)
@@ -72,7 +72,7 @@ def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 	print(message.text)
 
 	# joining chats
-	if "https://t.me/+" in message.text or "https://t.me/joinchat/" in message.text:
+	if "https://t.me/+" in message.text or "https://t.me/SAIFALLBOT/" in message.text:
 
 		if acc is None:
 			bot.send_message(message.chat.id,f"**String Session is not Set**", reply_to_message_id=message.id)
